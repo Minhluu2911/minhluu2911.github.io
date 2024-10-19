@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I am a 3rd year PhD student in Computer Science at UCLA, advised by [Aditya Grover](https://aditya-grover.github.io/). Before my PhD, I spent two wonderful years at VinAI Research as an AI Resident, where I was fortunate enough to work under the supervision of [Dr. Hung Bui](https://sites.google.com/site/buihhung/) and collaborate with amazing colleagues [Rui Shu](https://ruishu.io/) and [Tuan Pham](https://scholar.google.com/citations?user=CmbSBmQAAAAJ&hl=en).
-
-My research interest lies in the intersection of Decision making, Sequence modeling, Generative Modeling, and their applications to Tackling Climate Change. Aside from research, I am a huge fan of football (soccer) and Manchester United.
+My research interests include Computer Vision and Computer Graphics. Currently, I am a research resident at VinAI Research, where I am developing algorithms and techniques for **3D generative models** and **3D understanding**. I am dedicated to realizing my full potential as a science enthusiast, continuously striving to improve and seeking out opportunities for growth and self-refinement to discover optimal solutions.
 
 <!-- Aside from research, I love playing soccer in my free time. And I love animals. -->
