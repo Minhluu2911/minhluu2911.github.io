@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Minh Luu"
-  avatar           : "MinhLuu.JPG"
+  avatar           : "images/MinhLuu.JPG"
   bio              : "I'm from Vietnam. Doing research in Computer Vision."
   location         : "Viet Nam"
   employer         :
