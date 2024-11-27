@@ -7,16 +7,17 @@
   image: diversedream_before.jpg
   # image_mouseover: illuminerf_after.mp4
   authors:
-    - minhlnh
-    sign: "*"
-    - uytd
-    sign: "*"
-    - phongnh
-    sign: ""
-    - khoindm
-    sign: ""
-    - sonhb
-    sign: ""
+    - author_id: "minhlnh"
+      sign: "*"
+    - author_id: "uytd"
+      sign: "*"
+    - author_id: "phongnh"
+      sign: ""
+    - author_id: "khoindm"
+      sign: ""
+    - author_id: "sonhb"
+      sign: ""
+
 
 - id: modedreamer
   title: "ModeDreamer: Mode Guiding Score Distillation for Text-to-3D Generation using Reference Image Prompts"
@@ -27,16 +28,16 @@
   image: modedreamer_before.jpg
   image_mouseover: modedreamer_after.mp4
   authors:
-    - minhlnh
-    sign: "*"
-    - uytd
-    sign: "*"
-    - phongnh
-    sign: ""
-    - khoindm
-    sign: ""
-    - sonhb
-    sign: ""
+    - author_id: "minhlnh"
+      sign: "*"
+    - author_id: "uytd"
+      sign: "*"
+    - author_id: "phongnh"
+      sign: ""
+    - author_id: "khoindm"
+      sign: ""
+    - author_id: "sonhb"
+      sign: ""
 
 - id: od3dis
   title: "OE-3DIS: Open-Ended 3D Point Cloud Instance Segmentation"
@@ -47,11 +48,16 @@
   image: freevocab.png
   # image_mouseover: illuminerf_after.mp4
   authors:
-    - minhlnh
-    - phucnda
-    - anhtt
-    - cuongpham
-    - khoindm
+    - author_id: "minhlnh"
+      sign: "*"
+    - author_id: "phucnda"
+      sign: "*"
+    - author_id: "anhtt"
+      sign: ""
+    - author_id: "cuongpham"
+      sign: ""
+    - author_id: "khoindm"
+      sign: ""
 
 - id: any3dis
   title: "Any3DIS: Class-Agnostic 3D Instance Segmentation by 2D Mask Tracking"
@@ -62,8 +68,13 @@
   image: any3dis_teaser.png
   # image_mouseover: illuminerf_after.mp4
   authors:
-    - minhlnh
-    - phucnda
-    - anhtt
-    - cuongpham
-    - khoindm
+    - author_id: "phucnda"
+      sign: ""
+    - author_id: "minhlnh"
+      sign: ""
+    - author_id: "anhtt"
+      sign: ""
+    - author_id: "cuongpham"
+      sign: ""
+    - author_id: "khoindm"
+      sign: ""
