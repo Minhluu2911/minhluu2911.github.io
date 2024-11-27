@@ -1,10 +1,10 @@
 - id: diversedream
   title: "DiverseDream: Diverse Text-to-3D Synthesis with Augmented Text Embedding"
   venue: ECCV, 2024
-  description: "."
+  description: "Tackling mode-collapses problem in existing text-to-3D generation by using personalized text prompts to diversify the joint generation."
   project_page: https://diversedream.github.io/
   arxiv: 2312.02192v2
-  image: illuminerf_before.jpg
+  image: diversedream_before.jpg
   # image_mouseover: illuminerf_after.mp4
   authors:
     - minhlnh
@@ -12,31 +12,39 @@
     - uytd
     sign: "*"
     - phongnh
+    sign: ""
     - khoindm
+    sign: ""
     - sonhb
+    sign: ""
 
 - id: modedreamer
   title: "ModeDreamer: Mode Guiding Score Distillation for Text-to-3D Generation using Reference Image Prompts"
   venue: Under Submission CVPR 2025
-  description: "."
-  project_page: https://diversedream.github.io/
-  arxiv: 
-  image: illuminerf_before.jpg
-  # image_mouseover: illuminerf_after.mp4
+  description: "Introducing a novel Image Prompt Score Distillation (ISD) loss to address over-smoothing and low-quality outputs in text-to-3D generation caused by mode-seeking behavior in SDS-based method."
+  # project_page: https://diversedream.github.io/
+  # arxiv: 
+  image: modedreamer_before.jpg
+  image_mouseover: modedreamer_after.mp4
   authors:
     - minhlnh
+    sign: "*"
     - uytd
+    sign: "*"
     - phongnh
+    sign: ""
     - khoindm
+    sign: ""
     - sonhb
+    sign: ""
 
 - id: od3dis
   title: "OE-3DIS: Open-Ended 3D Point Cloud Instance Segmentation"
   venue: Arxiv Preprint, 2024
-  description: "."
+  description: "Introducing the Vocablulary-Free 3D point cloud instance segmentation with different solid baselines and a novel pointwise method using multimodal LLM."
   # project_page: https://diversedream.github.io/
   arxiv: 2408.11747
-  image: illuminerf_before.jpg
+  image: freevocab.png
   # image_mouseover: illuminerf_after.mp4
   authors:
     - minhlnh
@@ -48,10 +56,10 @@
 - id: any3dis
   title: "Any3DIS: Class-Agnostic 3D Instance Segmentation by 2D Mask Tracking"
   venue: Under Submission CVPR 2025
-  description: "."
-  # project_page: https://diversedream.github.io/
+  description: "A novel class-agnostic approach for 3D instance segmentation that leverages 2D mask tracking to segment 3D objects in point cloud scenes."
+  project_page: https://any3dis.github.io/
   arxiv: 2411.16183
-  image: illuminerf_before.jpg
+  image: any3dis_teaser.png
   # image_mouseover: illuminerf_after.mp4
   authors:
     - minhlnh
