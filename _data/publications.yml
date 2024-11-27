@@ -39,6 +39,26 @@
     - author_id: "sonhb"
       sign: ""
 
+- id: any3dis
+  title: "Any3DIS: Class-Agnostic 3D Instance Segmentation by 2D Mask Tracking"
+  venue: Under Submission CVPR 2025
+  description: "A novel class-agnostic approach for 3D instance segmentation that leverages 2D mask tracking to segment 3D objects in point cloud scenes."
+  project_page: https://any3dis.github.io/
+  arxiv: 2411.16183
+  image: any3dis_teaser.png
+  # image_mouseover: illuminerf_after.mp4
+  authors:
+    - author_id: "phucnda"
+      sign: ""
+    - author_id: "minhlnh"
+      sign: ""
+    - author_id: "anhtt"
+      sign: ""
+    - author_id: "cuongpham"
+      sign: ""
+    - author_id: "khoindm"
+      sign: ""
+
 - id: od3dis
   title: "OE-3DIS: Open-Ended 3D Point Cloud Instance Segmentation"
   venue: Arxiv Preprint, 2024
@@ -59,22 +79,3 @@
     - author_id: "khoindm"
       sign: ""
 
-- id: any3dis
-  title: "Any3DIS: Class-Agnostic 3D Instance Segmentation by 2D Mask Tracking"
-  venue: Under Submission CVPR 2025
-  description: "A novel class-agnostic approach for 3D instance segmentation that leverages 2D mask tracking to segment 3D objects in point cloud scenes."
-  project_page: https://any3dis.github.io/
-  arxiv: 2411.16183
-  image: any3dis_teaser.png
-  # image_mouseover: illuminerf_after.mp4
-  authors:
-    - author_id: "phucnda"
-      sign: ""
-    - author_id: "minhlnh"
-      sign: ""
-    - author_id: "anhtt"
-      sign: ""
-    - author_id: "cuongpham"
-      sign: ""
-    - author_id: "khoindm"
-      sign: ""
