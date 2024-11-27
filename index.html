@@ -23,6 +23,12 @@ layout: null
     gtag('config', '{{ site.google_analytics }}');
   </script>
 
+  <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
@@ -102,10 +108,9 @@ layout: null
         </ul>
       </div>-->
 
-      <h2 class="title is-3">Publications</h2>
-
+      <h2 class="title is-3">Publications<br><small><small><sup>* means equal contribution</sup></small></small></h2>
       {% for publication in site.data.publications %}
-      <div class="publication-block columns">
+      <div class="publication-block columns {% if publication.image_mouseover %}publication-mousecell{% endif %}">
 
         <div class="column is-2">
           <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
@@ -123,15 +128,15 @@ layout: null
           <div class="content">
             <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
             <div class="publication-authors">
-              {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
+              {% for author_dict in publication.authors %}
+              {% assign author = site.data.authors[author_dict.author_id] %}
               <span class="author-block {% if author.is_me %}author-me{% endif %}">
                 {% if author.is_me %}
-                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
+                {{author_id}} {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{{ author_dict.sign }}{% if forloop.last == false %},{%
                 endif %}
                 {% else %}
-                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                  }}</a>{% if forloop.last == false %},{% endif %}
+                <a href="{{ author.website }}"> {{ author.first_name }} {{ author.middle_name }} {{ author.last_name
+                  }}{{ author_dict.sign }}</a>{% if forloop.last == false %},{% endif %}
                 {% endif %}
               </span>
               {% endfor %}
@@ -145,14 +150,13 @@ layout: null
             <p class="publication-description">{{ publication.description }}</p>
             <!-- Publication Links. -->
             <div class="publication-links buttons field has-addons">
+              {% if publication.project_page %}
               <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
                 <span class="icon"><i class="fas fa-globe-asia"></i></span>
                 <span>Project Page</span>
               </a>
-              <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>PDF</span>
-              </a>
+              {% endif %}
+              {% if publication.arxiv %}
               <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/{{ publication.arxiv }}">
                 <span class="icon"><i class="ai ai-arxiv"></i></span>
                 <span>arXiv</span>
