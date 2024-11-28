@@ -24,7 +24,7 @@
   venue: Under Submission CVPR 2025
   description: "Introducing a novel Image Prompt Score Distillation (ISD) loss to address over-smoothing and low-quality outputs in text-to-3D generation caused by mode-seeking behavior in SDS-based method."
   # project_page: https://diversedream.github.io/
-  # arxiv: 
+  arxiv: 2411.18135
   image: modedreamer_before.jpg
   image_mouseover: modedreamer_after.mp4
   authors:
