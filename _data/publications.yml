@@ -1,3 +1,23 @@
+- id: any3dis
+  title: "Any3DIS: Class-Agnostic 3D Instance Segmentation by 2D Mask Tracking"
+  venue: CVPR, 2025
+  description: "A novel class-agnostic approach for 3D instance segmentation that leverages 2D mask tracking to segment 3D objects in point cloud scenes."
+  project_page: https://any3dis.github.io/
+  arxiv: 2411.16183
+  image: any3dis_teaser.png
+  # image_mouseover: illuminerf_after.mp4
+  authors:
+    - author_id: "phucnda"
+      sign: ""
+    - author_id: "minhlnh"
+      sign: ""
+    - author_id: "anhtt"
+      sign: ""
+    - author_id: "cuongpham"
+      sign: ""
+    - author_id: "khoindm"
+      sign: ""
+
 - id: diversedream
   title: "DiverseDream: Diverse Text-to-3D Synthesis with Augmented Text Embedding"
   venue: ECCV, 2024
@@ -21,7 +41,7 @@
 
 - id: modedreamer
   title: "ModeDreamer: Mode Guiding Score Distillation for Text-to-3D Generation using Reference Image Prompts"
-  venue: Under Submission CVPR 2025
+  venue: Arxiv Preprint, 2024
   description: "Introducing a novel Image Prompt Score Distillation (ISD) loss to address over-smoothing and low-quality outputs in text-to-3D generation caused by mode-seeking behavior in SDS-based method."
   project_page: https://modedreamer.github.io/
   arxiv: 2411.18135
@@ -37,26 +57,6 @@
     - author_id: "khoindm"
       sign: ""
     - author_id: "sonhb"
-      sign: ""
-
-- id: any3dis
-  title: "Any3DIS: Class-Agnostic 3D Instance Segmentation by 2D Mask Tracking"
-  venue: Under Submission CVPR 2025
-  description: "A novel class-agnostic approach for 3D instance segmentation that leverages 2D mask tracking to segment 3D objects in point cloud scenes."
-  project_page: https://any3dis.github.io/
-  arxiv: 2411.16183
-  image: any3dis_teaser.png
-  # image_mouseover: illuminerf_after.mp4
-  authors:
-    - author_id: "phucnda"
-      sign: ""
-    - author_id: "minhlnh"
-      sign: ""
-    - author_id: "anhtt"
-      sign: ""
-    - author_id: "cuongpham"
-      sign: ""
-    - author_id: "khoindm"
       sign: ""
 
 - id: od3dis
