@@ -4,16 +4,16 @@
 # Site metadata
 title: Minh Luu
 name: Minh Luu (Nguyen Hoang)
-position: Master Student @ University of Illinois at Urbana-Champaign (UIUC)
+position: MS CS @ University of Illinois at Urbana-Champaign (UIUC)
 email: hoangminh291101@gmail.com
 
 # Description for meta tags and social sharing
 description: >-
-  I am a researcher in 3D computer vision, generative models, and computer graphics. 
-  I am currently an AI Resident at [VinAI](https://www.vinai.io/).
-  
-  I received my Bachelor of Computer Science from the 
-  [Ho Chi Minh University of Technology](https://hcmut.edu.vn/) in 2023.
+  <p>Hi, I'm currently a Master student in Computer Science (MS CS) at <a href="https://siebelschool.illinois.edu/admissions/graduate">University of Illinois at Urbana-Champaign (UIUC)</a> in Fall 2025. 
+  Previously, I was an AI Research Resident at <a href="https://www.vinai.io/">VinAI Research (acquired by Qualcomm)</a>, working on 3D generative models and 3D scene understanding mentored by <a href="https://www.khoinguyen.org/">Dr. Khoi Nguyen</a> and <a href="https://sonhua.github.io/">Prof. Binh-Son Hua</a>. I earned my B.S. in Computer Science from <a href="https://hcmut.edu.vn/">Ho Chi Minh University of Technology</a> in 2023.
+  <br>
+  <br>
+  I'm interested in 3D vision, generative models, and computer graphics.
 
 # Site URLs and paths
 baseurl: "" # the subpath of your site, e.g. /blog

@@ -53,7 +53,7 @@ layout: null
   <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/index.scss' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -83,7 +83,7 @@ layout: null
         <div class="column">
           <header>
             <h1 class="title">
-              <strong>Hello, I'm {{ site.name }}</strong>
+              <strong>{{ site.name }}</strong>
             </h1>
             <p class="subtitle">{{ site.position }}</p>
           </header>
@@ -132,13 +132,6 @@ layout: null
       </div>
     </div>
   </section>
-
-  <!-- Divider -->
-  <div class="hr">
-    <div class="container">
-      <hr>
-    </div>
-  </div>
 
   <!-- Main Content -->
   <main class="section" role="main">
