@@ -1,0 +1,169 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Latest news and updates from {{ site.name }}">
+  <meta name="author" content="{{ site.name }}">
+  
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="News - {{ site.name }}">
+  <meta property="og:description" content="Latest news and updates from {{ site.name }}">
+  <meta property="og:url" content="{{ site.url }}/news.html">
+  <meta property="og:image" content="{{ site.url }}/images/portrait.jpg">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="News - {{ site.name }}">
+  <meta name="twitter:description" content="Latest news and updates from {{ site.name }}">
+  
+  <title>News - {{ site.name }}</title>
+
+  <!-- Google Analytics -->
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
+
+  <!-- Favicon and Icons -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
+
+  <!-- Preconnect to external domains for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/index.scss' | relative_url }}" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/js/index.js' | relative_url }}"></script>
+</head>
+
+<body>
+
+  <!-- Simple Header Section -->
+  <section class="section" style="padding: 2rem 0 1rem 0;">
+    <div class="container is-max-desktop">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <!-- Simple Breadcrumb -->
+          <nav class="breadcrumb" aria-label="breadcrumbs" style="margin-bottom: 1rem;">
+            <ul>
+              <li><a href="index.html">← Back to Home</a></li>
+            </ul>
+          </nav>
+          
+          <!-- Simple Title -->
+          <h1 class="title is-3">
+            <strong>All News & Updates</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section" role="main" style="padding-top: 0;">
+    <div class="container is-max-desktop">
+
+      <!-- Simple News List -->
+      <section id="all-news" class="news-section">
+        <div class="content">
+          <ul style="list-style: none; padding: 0;">
+            {% for news in site.data.news %}
+            <li style="padding: 0.5rem 0; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; line-height: 1.4; transition: all 0.3s ease;"
+                onmouseover="this.style.backgroundColor='#f8fafc'; this.style.paddingLeft='0.75rem'; this.style.margin='0 -0.75rem'; this.style.borderRadius='6px'; this.style.borderBottomColor='transparent';"
+                onmouseout="this.style.backgroundColor=''; this.style.paddingLeft='0'; this.style.margin='0'; this.style.borderRadius=''; this.style.borderBottomColor='#f1f5f9';">
+              <strong style="color: #2563eb; font-weight: 600; font-size: 0.85rem; display: inline-block; min-width: 4rem;">{{ news.date }}</strong>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+
+      <!-- Simple Back to Top -->
+      <div class="has-text-centered" style="margin-top: 2rem;">
+        <a href="#" class="button is-light is-small" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="border-radius: 8px;">
+          <span class="icon">
+            <i class="fas fa-arrow-up"></i>
+          </span>
+          <span>Back to Top</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Simple Footer -->
+  <footer class="footer" role="contentinfo" style="background-color: #f8fafc; border-top: 1px solid #e5e7eb; margin-top: 3rem;">
+    <div class="container">
+      <!-- Social Links -->
+      <nav class="content footer-links has-text-centered" 
+           role="navigation" 
+           aria-label="Footer social media links">
+        <a href="mailto:{{ site.email }}" aria-label="Send email to {{ site.name }}" style="font-size: 1.5rem; color: #666; margin: 0 0.75rem; transition: all 0.3s ease;"
+           onmouseover="this.style.color='#2563eb'; this.style.transform='translateY(-2px)';"
+           onmouseout="this.style.color='#666'; this.style.transform='translateY(0)';">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/{{ site.github_username }}" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Visit {{ site.name }}'s GitHub profile"
+           style="font-size: 1.5rem; color: #666; margin: 0 0.75rem; transition: all 0.3s ease;"
+           onmouseover="this.style.color='#2563eb'; this.style.transform='translateY(-2px)';"
+           onmouseout="this.style.color='#666'; this.style.transform='translateY(0)';">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Visit {{ site.name }}'s Google Scholar profile"
+           style="font-size: 1.5rem; color: #666; margin: 0 0.75rem; transition: all 0.3s ease;"
+           onmouseover="this.style.color='#2563eb'; this.style.transform='translateY(-2px)';"
+           onmouseout="this.style.color='#666'; this.style.transform='translateY(0)';">
+          <i class="ai ai-google-scholar" aria-hidden="true"></i>
+        </a>
+      </nav>
+      
+      <!-- Simple Attribution -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p class="has-text-grey" style="font-size: 0.9rem;">
+              Website template adapted from 
+              <a href="https://github.com/keunhong/keunhong.github.io" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 style="color: #2563eb;">Keunhong Park</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html> 
